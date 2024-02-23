@@ -10,7 +10,20 @@ public class Customer {
     public String apellidos;
     public Long documento;
     public Long celular;
-    public List<Car> misCarros = new ArrayList<Car>();
+    public List<Car> misCarros;
+
+
+    //constructor
+    public Customer(String nombre, TipoDocumento tipoDocumento, String apellidos, Long documento, Long celular) {
+        this.nombre = nombre;
+        this.tipoDocumento = tipoDocumento;
+        this.apellidos = apellidos;
+        this.documento = documento;
+        this.celular = celular;
+        this.misCarros = new ArrayList<Car>();
+    }
+
+    
 
     //Metodo 1: añadir carro al cliente
     /*

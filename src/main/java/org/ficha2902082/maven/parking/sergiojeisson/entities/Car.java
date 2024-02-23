@@ -10,4 +10,12 @@ public class Car {
     public String placa;
     public TipoVehiculo tipoVehiculo;
 
+    public Car() {
+    }
+
+    public Car(String placa, 
+            TipoVehiculo tipoVehiculo) {
+        this.placa = placa;
+        this.tipoVehiculo = tipoVehiculo;
+    }
 }
